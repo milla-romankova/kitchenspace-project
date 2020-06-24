@@ -37,6 +37,12 @@ i {
    color: white;
 }
 
+ @media (max-width: 650px) {
+    .header-topper-row1 {
+    display: none;
+    }
+ }
+
 .header-topper-row2 {
     display: flex;
     justify-content: space-between;
@@ -134,7 +140,7 @@ i {
     margin-bottom: -10px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 860px) {
 
    .header-lower-title {
       font-size: 84px;
