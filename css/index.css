@@ -66,7 +66,6 @@ i {
     padding: 5px;
     border: 1px solid transparent;
     font-size: 16px;  
-
 }
 
 .header-menu li a:hover {
@@ -74,7 +73,7 @@ i {
 }
 
 .basket-button {
-    padding: 1.5em 1.5em 1.5em 1.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
     border: 0.1em solid transparent;
     margin: -0.8em 0.3em 0.3em 0.8em;
     border-radius: 0.5em;
@@ -82,14 +81,29 @@ i {
     text-align: center;
     background-color: var(--main-color);
     font-weight: 700;
-    font-size: 10px;
-    height: 3em;
+    font-size: 11px;
     }
 
 .basket-button:hover {
     color: #000000;
     background-color: #FFFFFF;
     cursor: pointer;
+}
+
+@media (min-width: 90git add .0px) {
+
+  .basket-button {
+    font-size: 11px;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    }
+}
+
+@media (max-width: 650px) {
+
+     .header-menu {
+        flex-direction: column;
+    }
+
 }
 
 .header-lower {
@@ -105,6 +119,14 @@ i {
     padding-bottom: 150px;
 }
 
+@media (min-width: 650px) {
+
+  .header-lower {
+    background-position: center;
+    padding-top: 220px;
+    }
+}
+
 .header-lower-title {
     font-size: 50px;
     color: #F7F5F6;
@@ -112,9 +134,19 @@ i {
     margin-bottom: -10px;
 }
 
+@media (min-width: 650px) {
+
+   .header-lower-title {
+      font-size: 84px;
+      }
+     
+}
+
 .header-lower-title span {
     color: var(--main-color);
 }
+
+
 
 header p:first-of-type {
     font-size: 18px;
@@ -134,19 +166,4 @@ header p:first-of-type {
     height: 4em;}
 }
  
-@media (min-width: 600px) {
 
-  .header-lower {
-    background-position: center;
-    }
-
-  .basket-button {
-    font-size: 11px;
-    height: 4em;
-    }
-
-   .header-lower-title {
-      font-size: 84px;
-      }
-      
-}
