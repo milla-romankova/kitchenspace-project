@@ -14,8 +14,8 @@ body {
 
 .header-topper {
     background-color: #333333;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .header-topper-row1 {
@@ -82,8 +82,8 @@ i {
     text-align: center;
     background-color: var(--main-color);
     font-weight: 700;
-    font-size: 11px;
-    height: 4em;
+    font-size: 10px;
+    height: 3em;
     }
 
 .basket-button:hover {
@@ -93,20 +93,20 @@ i {
 }
 
 .header-lower {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
     background-image: url(../img/cooking-staff-mix.jpg);
     background-size: cover;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background-position: center;
+    background-position: left top;
     padding-top: 180px;
     padding-bottom: 150px;
 }
 
 .header-lower-title {
-    font-size: 84px;
+    font-size: 50px;
     color: #F7F5F6;
     line-height: 1em;
     margin-bottom: -10px;
@@ -132,4 +132,21 @@ header p:first-of-type {
     font-weight: 700;
     font-size: 14px;
     height: 4em;}
+}
+ 
+@media (min-width: 600px) {
+
+  .header-lower {
+    background-position: center;
+    }
+
+  .basket-button {
+    font-size: 11px;
+    height: 4em;
+    }
+
+   .header-lower-title {
+      font-size: 84px;
+      }
+      
 }
